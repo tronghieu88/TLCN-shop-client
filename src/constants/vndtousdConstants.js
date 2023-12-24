@@ -1,0 +1,4 @@
+export const VND_TO_USD_REQUEST = 'VND_TO_USD_REQUEST'
+export const VND_TO_USD_SUCCESS = 'VND_TO_USD_SUCCESS'
+export const VND_TO_USD_FAIL = 'VND_TO_USD_FAIL'
+export const VND_TO_USD_RESET = 'VND_TO_USD_RESET'
