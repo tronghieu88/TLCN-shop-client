@@ -92,7 +92,7 @@ const ProductCard = (props) => {
               </div>
               <div class="flex items-center mt-2.5 mb-4 ">
                 <Rating value={product?.rating} readOnly />
-                <span class="bg-blue-100 text-primary-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800 ml-3">
+                <span class="bg-blue-100 text-primary-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-red-700 ml-3">
                   {product?.rating}
                 </span>
                 <TbEqualNot
@@ -106,7 +106,7 @@ const ProductCard = (props) => {
                   onClick={handleOpenModal}
                   class="w-full text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 
               focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center 
-              dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              dark:bg-primary-600 dark:hover:bg-yellow-500 dark:focus:ring-primary-800"
                 >
                   Thêm vào giỏ
                 </button>

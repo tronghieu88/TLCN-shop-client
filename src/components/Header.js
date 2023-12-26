@@ -1,12 +1,14 @@
 import { React, Fragment, useState, useEffect, useRef } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
+
 import {
   Bars3Icon,
   BellIcon,
   XMarkIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
-import logo from "../assets/images/logo.svg";
+// import logo from "../assets/images/logo.svg";
+import logo from "../assets/images/logo.png";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../actions/userActions";
@@ -231,14 +233,18 @@ const Header = () => {
     <>
       {loading && <Loading />}
       <div className="min-h-full sticky top-0 z-10">
-        <Disclosure as="nav" className="bg-primary-800">
+        <Disclosure as="nav" className="bg-red-600">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
                     <Link className="flex-shrink-0" to="/" onClick={resetNav}>
-                      <img className="h-8 w-8" src={logo} alt="Your Company" />
+                      <img
+                        className="h-12 w-27 rounded-md"
+                        src={logo}
+                        alt="Your Company"
+                      />
                     </Link>
 
                     <div className="hidden md:block">
@@ -250,7 +256,7 @@ const Header = () => {
                             className={classNames(
                               item.current
                                 ? "bg-primary-900 text-white"
-                                : "text-primary-300 hover:bg-primary-700 hover:text-white",
+                                : "text-white-800 hover:bg-primary-700 hover:text-white",
                               "px-3 py-2 rounded-md text-sm font-medium"
                             )}
                             aria-current={item.current ? "page" : undefined}
@@ -367,11 +373,11 @@ const Header = () => {
                     </div>
                   </div>
 
-                  <div className="hidden md:block">
-                    <div className="ml-4 flex items-center md:ml-6 relative">
+                  <div className=" hidden md:block">
+                    <div className=" ml-4 flex items-center md:ml-6 relative">
                       <Link
                         to={"/cart"}
-                        className="rounded-full bg-primary-900 p-1 text-primary-400 hover:text-white 
+                        className="flex bg-red-600 p-1 text-white-400 hover:text-white 
                         focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-800"
                         onClick={resetNav}
                       >
@@ -383,7 +389,7 @@ const Header = () => {
                         <span className="absolute text-white text-xs font-bold top-[-5%] right-[60%]">
                           {userInfo?.status ? qt?.quantity : ""}
                         </span>
-
+                        <h1>Cart</h1>
                         {/* <div
                           className="absolute h-20 right-[60%] z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 
                         shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none "

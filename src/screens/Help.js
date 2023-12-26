@@ -14,8 +14,7 @@ const Help = () => {
         Khách hàng cần trợ giúp về{" "}
         <strong>đơn hàng, bảo hành, kỹ thuật, tư vấn mua hàng</strong> hãy liên
         hệ <i>hotline:</i>
-        <b className="text-primary-700"> 0828674940</b> hoặc{" "}
-        <b className="text-primary-700">0586187410</b>
+        <b className="text-primary-700"> 0396337776</b>
       </p>
     </>
   );

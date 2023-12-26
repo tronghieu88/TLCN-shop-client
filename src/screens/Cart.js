@@ -691,7 +691,7 @@ const Cart = () => {
                   />
                 </div>
 
-                <div className="w-full md:w-[40%] flex items-center justify-center ">
+                {/* <div className="w-full md:w-[40%] flex items-center justify-center ">
                   <button
                     type=""
                     className="  flex w-full  items-center justify-center rounded-md border border-transparent 
@@ -701,7 +701,7 @@ const Cart = () => {
                     <CiDiscount1 className="mr-2" />
                     Áp dụng
                   </button>
-                </div>
+                </div> */}
               </div>
 
               <hr class="my-4" />

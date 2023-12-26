@@ -39,10 +39,10 @@ const Login = () => {
     // }
   }, []);
   return (
-    <div className="m-4 rounded-sm border-2 border-slate-400 ">
+    <div className="m-4 rounded-sm border-2 border-slate-10 ">
       {loading && <Loading />}
       <section class="bg-white">
-        <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="grid grid-cols-1 ">
           <div class="flex items-center justify-center px-4 py-10 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
             <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
               <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">
@@ -93,13 +93,13 @@ const Login = () => {
                         Mật khẩu{" "}
                       </label>
 
-                      <Link
+                      {/* <Link
                         to="/forgotpass"
                         class="text-sm font-medium text-blue-600 hover:underline hover:text-blue-700 focus:text-blue-700"
                       >
                         {" "}
                         Quên mật khẩu?{" "}
-                      </Link>
+                      </Link> */}
                     </div>
                     <div class="mt-2.5  ">
                       <input
@@ -111,13 +111,20 @@ const Login = () => {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                       />
+                      <Link
+                        to="/forgotpass"
+                        class="p-5 float-right text-sm font-medium text-blue-600 hover:underline hover:text-blue-700 focus:text-blue-700"
+                      >
+                        {" "}
+                        Quên mật khẩu?{" "}
+                      </Link>
                     </div>
                   </div>
 
                   <div>
                     <button
                       type="submit"
-                      class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700"
+                      class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-red-600 border border-transparent rounded-md focus:outline-none hover:bg-yellow-500 focus:bg-blue-700"
                     >
                       Đăng nhập
                     </button>
@@ -163,7 +170,7 @@ const Login = () => {
             </div>
           </div>
 
-          <div class="flex items-center justify-center px-4 py-10 sm:py-16 lg:py-24 bg-gray-50 sm:px-6 lg:px-8">
+          {/* <div class="flex items-center justify-center px-4 py-10 sm:py-16 lg:py-24 bg-gray-50 sm:px-6 lg:px-8">
             <div>
               <img
                 class="w-full mx-auto"
@@ -187,7 +194,7 @@ const Login = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

@@ -10,10 +10,10 @@ const Home = () => {
   return (
     <div className="m-2 lg:m-0">
       <Banner />
+      <TopProduct />
       <Technology />
       <Trademark />
       <Deal />
-      <TopProduct />
     </div>
   );
 };

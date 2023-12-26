@@ -4,8 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 
+// const background ="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/kdhjd-1920x450.jpg";
 const background =
-  "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/kdhjd-1920x450.jpg";
+  "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/12/banner/12-1920x450-1.png";
 
 const sliders = [
   "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/sdptn720-220-720x220-1.png",
@@ -69,7 +70,7 @@ export default function Banner() {
         <img
           src={background}
           alt="background"
-          className="hidden md:block rounded-lg  w-full"
+          className="hidden md:block rounded-lg w-full "
         />
       </div>
 

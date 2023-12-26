@@ -485,7 +485,7 @@ const Register = () => {
                       title=""
                       class="text-blue-600 hover:text-blue-700 hover:underline"
                     >
-                      Chính sách Bảo mật của NLH-Ecom's
+                      Chính sách Bảo mật của Shop Me
                     </Link>
                   </label>
                 </div>
@@ -493,7 +493,7 @@ const Register = () => {
                 <div className="w-full text-center">
                   <button
                     type="submit"
-                    class=" w-full lg:w-[50%] px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700"
+                    class=" w-full lg:w-[50%] px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-red-600 border border-transparent rounded-md focus:outline-none hover:bg-yellow-500 focus:bg-blue-700"
                   >
                     Đăng ký
                   </button>
